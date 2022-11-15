@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/boy.png-bf940026e474b8cab52c8e178ed4ebd3.stex"
+path="res://.import/windmill.png-57e03caebfd87d8d57e609e4ed0dd2eb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/boy.png"
-dest_files=[ "res://.import/boy.png-bf940026e474b8cab52c8e178ed4ebd3.stex" ]
+source_file="res://assets/images/windmill.png"
+dest_files=[ "res://.import/windmill.png-57e03caebfd87d8d57e609e4ed0dd2eb.stex" ]
 
 [params]
 

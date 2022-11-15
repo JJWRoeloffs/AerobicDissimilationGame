@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ticket.png-dbd6852418a5d3ae8792544da5fe05f9.stex"
+path="res://.import/boy.png-e448b190cebf010dbd82e45796a545e3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ticket.png"
-dest_files=[ "res://.import/ticket.png-dbd6852418a5d3ae8792544da5fe05f9.stex" ]
+source_file="res://assets/images/boy.png"
+dest_files=[ "res://.import/boy.png-e448b190cebf010dbd82e45796a545e3.stex" ]
 
 [params]
 

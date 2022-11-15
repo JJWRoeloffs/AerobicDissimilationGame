@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cotton-candy.png-ddb19b02fd4b7961eb0bee7c9440d470.stex"
+path="res://.import/confetti.png-dc01ad7cb1afe186ec5871d650814136.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cotton-candy.png"
-dest_files=[ "res://.import/cotton-candy.png-ddb19b02fd4b7961eb0bee7c9440d470.stex" ]
+source_file="res://assets/images/confetti.png"
+dest_files=[ "res://.import/confetti.png-dc01ad7cb1afe186ec5871d650814136.stex" ]
 
 [params]
 

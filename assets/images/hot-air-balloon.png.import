@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/windmill.png-043d1263ba7f91c6fb2cb675a80c1761.stex"
+path="res://.import/hot-air-balloon.png-8565219bfe54d59ababde637acf67014.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/windmill.png"
-dest_files=[ "res://.import/windmill.png-043d1263ba7f91c6fb2cb675a80c1761.stex" ]
+source_file="res://assets/images/hot-air-balloon.png"
+dest_files=[ "res://.import/hot-air-balloon.png-8565219bfe54d59ababde637acf67014.stex" ]
 
 [params]
 

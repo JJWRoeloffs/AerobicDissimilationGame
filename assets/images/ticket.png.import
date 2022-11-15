@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/confetti.png-3f1dc2a9c476c7a3d68cab6cff989310.stex"
+path="res://.import/ticket.png-aa647a39f330612926ffcf23fc36018e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/confetti.png"
-dest_files=[ "res://.import/confetti.png-3f1dc2a9c476c7a3d68cab6cff989310.stex" ]
+source_file="res://assets/images/ticket.png"
+dest_files=[ "res://.import/ticket.png-aa647a39f330612926ffcf23fc36018e.stex" ]
 
 [params]
 

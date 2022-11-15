@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/firework.png-d4501572d522eda0ff83054abd1c12a9.stex"
+path="res://.import/bumper-car.png-5f56e10fdb2f13d290a67d2ce148c42d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/firework.png"
-dest_files=[ "res://.import/firework.png-d4501572d522eda0ff83054abd1c12a9.stex" ]
+source_file="res://assets/images/bumper-car.png"
+dest_files=[ "res://.import/bumper-car.png-5f56e10fdb2f13d290a67d2ce148c42d.stex" ]
 
 [params]
 

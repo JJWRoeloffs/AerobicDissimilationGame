@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/menu/CellMap.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Main.gd" type="Script" id=2]
+
+[node name="Main" type="Node"]
+script = ExtResource( 2 )
+
+[node name="CellMap" parent="." instance=ExtResource( 1 )]
+anchor_top = 0.005
+anchor_right = 0.995
+anchor_bottom = 1.0
+margin_top = -3.0
+margin_right = 7.11993
+margin_bottom = -1.0

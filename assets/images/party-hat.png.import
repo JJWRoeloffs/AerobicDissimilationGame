@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ferris-wheel.png-a942889972b179710ffca6f8382bce7d.stex"
+path="res://.import/party-hat.png-f52304fab2471f30a5bf33286e16ca8d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ferris-wheel.png"
-dest_files=[ "res://.import/ferris-wheel.png-a942889972b179710ffca6f8382bce7d.stex" ]
+source_file="res://assets/images/party-hat.png"
+dest_files=[ "res://.import/party-hat.png-f52304fab2471f30a5bf33286e16ca8d.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/atp.png-f635fac3b97b8ab459c19d7896058e3c.stex"
+path="res://.import/mitochondria.png-d1f1677e2ee7113b7f5c519394a86839.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/atp.png"
-dest_files=[ "res://.import/atp.png-f635fac3b97b8ab459c19d7896058e3c.stex" ]
+source_file="res://assets/images/mitochondria.png"
+dest_files=[ "res://.import/mitochondria.png-d1f1677e2ee7113b7f5c519394a86839.stex" ]
 
 [params]
 

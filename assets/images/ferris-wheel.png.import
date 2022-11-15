@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/roller-coaster.png-2c54f6cb3891ffbbff1a1d39abb068e8.stex"
+path="res://.import/ferris-wheel.png-60eccd5d7cf21cc803c11e5faf793005.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/roller-coaster.png"
-dest_files=[ "res://.import/roller-coaster.png-2c54f6cb3891ffbbff1a1d39abb068e8.stex" ]
+source_file="res://assets/images/ferris-wheel.png"
+dest_files=[ "res://.import/ferris-wheel.png-60eccd5d7cf21cc803c11e5faf793005.stex" ]
 
 [params]
 
