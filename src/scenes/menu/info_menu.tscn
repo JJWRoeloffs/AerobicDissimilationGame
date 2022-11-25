@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/fonts/aerobic_dissimilation_theme.tres" type="Theme" id=1]
+[ext_resource path="res://assets/images/yellow_background.png" type="Texture" id=2]
+
+[node name="InfoMenu" type="Node2D"]
+position = Vector2( 0, -1 )
+
+[node name="InfoMenuControl" type="Control" parent="."]
+margin_right = 502.0
+margin_bottom = 723.0
+
+[node name="TextureRect" type="TextureRect" parent="InfoMenuControl"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="InfoMenuControl"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 33.0
+margin_top = 29.0
+margin_right = -44.0
+margin_bottom = -43.0
+
+[node name="InfoTitle" type="RichTextLabel" parent="InfoMenuControl/VBoxContainer"]
+margin_right = 425.0
+margin_bottom = 70.0
+focus_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource( 1 )
+text = "Glycolysis"
+fit_content_height = true
+selection_enabled = true
+override_selected_font_color = true
+
+[node name="InfoText" type="RichTextLabel" parent="InfoMenuControl/VBoxContainer"]
+margin_top = 74.0
+margin_right = 425.0
+margin_bottom = 651.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Glycolysis is the metabolic pathway that converts glucose (C6H12O6) into pyruvate (CH3COCO2H). The free energy released in this process is used to form the high-energy molecules adenosine triphosphate (ATP) and reduced nicotinamide adenine dinucleotide (NADH).[1] Glycolysis is a sequence of ten reactions catalyzed by enzymes. Capture of bond energy of carbohydrates."

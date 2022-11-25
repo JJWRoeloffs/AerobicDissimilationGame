@@ -1,0 +1,4 @@
+Hello
+This is a test text
+To see if it works to 
+load it from a file. 
