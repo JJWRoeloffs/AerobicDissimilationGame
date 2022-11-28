@@ -5,8 +5,8 @@
 [ext_resource path="res://assets/images/settings.png" type="Texture" id=3]
 [ext_resource path="res://assets/fonts/aerobic_dissimilation_theme.tres" type="Theme" id=4]
 [ext_resource path="res://src/buttons/PlayButton.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/images/info.png" type="Texture" id=6]
-[ext_resource path="res://src/buttons/InfoButton.gd" type="Script" id=7]
+[ext_resource path="res://src/buttons/InfoButton.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/scenes/infomenus/InfoMenuControl.tscn" type="PackedScene" id=7]
 
 [node name="CellMap" type="Control"]
 margin_right = 1280.0
@@ -18,6 +18,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 1 )
 expand = true
+
+[node name="InfoButton" parent="." instance=ExtResource( 6 )]
 
 [node name="SetHamContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.928723
@@ -87,15 +89,7 @@ anchor_right = 0.758095
 anchor_bottom = 0.842667
 next_scene_path = "res://src/scenes/oxidative_phosphorilation/start_ox_phor.tscn"
 
-[node name="InfoButton" type="Button" parent="."]
-anchor_left = 0.282031
-anchor_top = 0.197222
-anchor_right = 0.325
-anchor_bottom = 0.301389
-icon = ExtResource( 6 )
-flat = true
-expand_icon = true
-script = ExtResource( 7 )
-__meta__ = {
-"_edit_use_anchors_": true
-}
+[node name="InfoMenuControl" parent="." instance=ExtResource( 7 )]
+
+[connection signal="draw" from="CellBackground" to="InfoMenuControl" method="_on_draw"]
+[connection signal="button_up" from="InfoButton" to="InfoButton" method="_on_InfoButton_up"]
