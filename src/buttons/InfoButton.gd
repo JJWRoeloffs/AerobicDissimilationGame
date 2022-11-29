@@ -1,26 +1,17 @@
 tool
 extends Button
 
-#export(String, FILE) var next_scene_path: = ""
+export(String, FILE) var linked_text: = ""
 
-#onready var scene_tree: = get_tree()
-#onready var info_overlay: ColorRect = get_node("InfoRect")
-#
-#var paused: = false setget set_paused
-#
-#func _unhandled_input(event: InputEvent) -> void:
-#    if signal._on_InfoButton_up():
-#        paused = not paused
-#        #get_tree().change_scene(next_scene_path)
-#        info_overlay.visible = true
-#
-#func set_paused(value: bool=true) -> void:
-#    paused = value
-#    scene_tree.paused = value
-#    info_overlay.visible = value
-#
-#func _get_configuration_warning() -> String:
-#    if next_scene_path == "":
-#        return "next_scene_path has to be set for button to work" 
-#    else: 
-#        return ""
+
+func _ready() -> void:
+    InfomenuGlobal.connect("infomenu_toggled", self, "disable")
+
+func disable(value: bool) -> void:
+    self.disabled = value
+
+func _on_button_up() -> void:
+    InfomenuGlobal.menu = linked_text
+
+func _get_configuration_warning() -> String:
+    return "Linked text needs to be set" if linked_text == "" else ""

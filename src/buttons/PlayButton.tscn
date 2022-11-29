@@ -14,11 +14,9 @@ margin_right = 0.199951
 margin_bottom = 0.359985
 icon = ExtResource( 2 )
 flat = true
-icon_align = 1
 expand_icon = true
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": true
 }
-
 [connection signal="button_up" from="." to="." method="_on_button_up"]
