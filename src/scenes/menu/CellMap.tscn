@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/images/cell_map_background.png" type="Texture" id=1]
 [ext_resource path="res://assets/images/menu.png" type="Texture" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://assets/fonts/aerobic_dissimilation_theme.tres" type="Theme" id=4]
 [ext_resource path="res://src/buttons/PlayButton.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/buttons/InfoButton.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/images/info2.png" type="Texture" id=7]
+[ext_resource path="res://assets/fonts/info_text_theme.tres" type="Theme" id=8]
 
 [node name="CellMap" type="Control"]
 margin_right = 1280.0
@@ -20,9 +22,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 texture = ExtResource( 1 )
 expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="SetHamContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.928723
@@ -93,4 +92,19 @@ anchor_bottom = 0.842667
 next_scene_path = "res://src/scenes/oxidative_phosphorilation/start_ox_phor.tscn"
 
 [node name="InfoButton" parent="." instance=ExtResource( 6 )]
+anchor_left = 0.166406
+anchor_top = 0.168056
+anchor_right = 0.316406
+anchor_bottom = 0.245833
+theme = ExtResource( 8 )
+text = "Glycolysis"
+icon = ExtResource( 7 )
+align = 0
+icon_align = 2
 linked_text = "res://assets/texts/Test.txt"
+
+[node name="InfoCitricAcid" parent="." instance=ExtResource( 6 )]
+margin_left = 401.0
+margin_top = 111.0
+margin_right = 410.293
+margin_bottom = 178.188
