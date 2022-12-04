@@ -1,0 +1,3 @@
+Glycolysis
+A series of reactions that ultimately splits glucose into two molecules of pyruvate. The word glycolysis means 'sugar splitting', and that is exactly what happens during this pathway. Glucose, a six-carbon sugar, is split into two two three-carbon sugars. These smaller sugars are then oxidized and their remaining atoms rearranged to form two molecules of pyruvate. Glycolysis can be divided into two phases: the energy investment phase and the energy payoff phase. During the energy investment phase, the cell actually spends 2 ATP. During the energy payoff phase, the cell gains 4 ATP. 
+Glycolysis occurs in almost all living cells, serving as the starting point for fermentation or cellular respiration. 

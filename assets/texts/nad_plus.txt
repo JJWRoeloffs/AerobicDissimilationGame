@@ -1,0 +1,3 @@
+NAD+
+NAD+ is the oxidized form of nicotinamide adenine dinucleotide, a coenzyme that can accept electrons, becoming NADH. As an electron acceptor, NAD+ functions as an oxidizing agent during respiration. So it traps electrons from glucose. 
+NAD+ is the most versatile electron acceptor in cellular respiration and functions in several of the redox steps during breakdown of glucose. Electrons lose very little of their potential energy when they are transferred from glucose to NAD+. 
