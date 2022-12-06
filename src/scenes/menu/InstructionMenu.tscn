@@ -89,7 +89,7 @@ align = 0
 icon_align = 1
 next_scene_path = "res://src/scenes/Main.tscn"
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="InstructionsControl"]
+[node name="PlayText" type="RichTextLabel" parent="InstructionsControl"]
 anchor_right = 0.031
 anchor_bottom = 0.056
 margin_left = 926.0
