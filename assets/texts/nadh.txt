@@ -1,0 +1,2 @@
+NADH
+The reduced form of nicotinamide adenine dinucleotide that temporarily stores electrons during cellular respiration. NADH acts as an electron donor to the electron transport chain during oxidative phosphorylation. Electrons removed from glucose are shuttled by NADH to the higher-energy end of the chain. At the lower-energy end, O2 caputres these electrons along with hydrogen forming water. 

@@ -13,9 +13,6 @@
 margin_right = 1280.0
 margin_bottom = 720.0
 theme = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="CellBackground" type="TextureRect" parent="."]
 anchor_right = 1.0
@@ -101,4 +98,43 @@ text = "Glycolysis"
 icon = ExtResource( 7 )
 align = 0
 icon_align = 2
-linked_text = "res://assets/texts/Test.txt"
+linked_text = "res://assets/texts/glycolysis.txt"
+
+
+[node name="InfoCAC" parent="." instance=ExtResource( 6 )]
+anchor_left = 0.445313
+anchor_top = 0.291667
+anchor_right = 0.646875
+anchor_bottom = 0.369444
+theme = ExtResource( 8 )
+text = "Citric Acid Cycle"
+icon = ExtResource( 7 )
+align = 0
+icon_align = 2
+linked_text = "res://assets/texts/citric_acid_cycle.txt"
+
+[node name="InfoOxPho" parent="." instance=ExtResource( 6 )]
+anchor_left = 0.578125
+anchor_top = 0.848611
+anchor_right = 0.88125
+anchor_bottom = 0.926389
+theme = ExtResource( 8 )
+text = "Oxidative Phosphorylation"
+icon = ExtResource( 7 )
+align = 0
+icon_align = 2
+linked_text = "res://assets/texts/oxidative_phosphorylation.txt"
+
+[node name="InfoMicho" parent="." instance=ExtResource( 6 )]
+anchor_left = 0.195
+anchor_top = 0.831
+anchor_right = 0.378906
+anchor_bottom = 0.923611
+margin_left = -17.6
+margin_top = -0.320007
+theme = ExtResource( 8 )
+text = "Mitochondrium"
+icon = ExtResource( 7 )
+align = 0
+icon_align = 2
+linked_text = "res://assets/texts/mitochondrium.txt"
