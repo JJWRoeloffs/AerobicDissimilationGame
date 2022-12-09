@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/images/cotton-candy.png" type="Texture" id=1]
+[ext_resource path="res://src/scenes/glycolysis/ATP.gd" type="Script" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 22.0498
+height = 31.8717
+
+[node name="ADP" type="RigidBody2D"]
+rotation = 0.000991287
+collision_layer = 2147483650
+collision_mask = 3
+gravity_scale = 0.0
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.236897, -0.943629 )
+rotation = 1.10638
+shape = SubResource( 1 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+rotation = 0.00932304
+rect = Rect2( -40, -25, 80, 50 )
+
+[node name="cotton-candy" type="Sprite" parent="."]
+position = Vector2( -0.172644, -0.199984 )
+scale = Vector2( 0.126993, 0.106302 )
+texture = ExtResource( 1 )
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_screen_exited"]
