@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/buttons/PlayButton.tscn" type="PackedScene" id=1]
+
+[node name="DeathStage" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 1, 0.917647, 0.627451, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" parent="Control" instance=ExtResource( 1 )]
+next_scene_path = "res://src/scenes/glycolysis/start_glycolysis.tscn"
