@@ -21,6 +21,7 @@ config/icon="res://icon.png"
 [autoload]
 
 InfomenuGlobal="*res://src/globals/InfomenuGlobal.tscn"
+GlycolysisGlobal="*res://src/globals/GlycolysisGlobal.tscn"
 
 [display]
 
