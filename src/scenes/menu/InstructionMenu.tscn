@@ -57,6 +57,9 @@ margin_bottom = 232.0
 theme = ExtResource( 1 )
 text = "Instructions to Aerobic Dissimilation: The Video Game
 "
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="InstructionText" type="RichTextLabel" parent="InstructionsControl"]
 anchor_right = 0.5
@@ -79,6 +82,9 @@ theme = ExtResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "Welcome to our fair of Aerobic Dissimilation. You will get all the information on how a glucose molecule is turned into energy that humans can use to fuel all kinds of processes in our bodies while riding in bumper cars and roller coasters. 
 "
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="PlayButton" parent="InstructionsControl" instance=ExtResource( 5 )]
 anchor_left = 0.730625
@@ -86,7 +92,6 @@ anchor_top = 0.664778
 anchor_right = 0.800625
 anchor_bottom = 0.789778
 align = 0
-icon_align = 1
 next_scene_path = "res://src/scenes/Main.tscn"
 
 [node name="PlayText" type="RichTextLabel" parent="InstructionsControl"]
@@ -98,3 +103,6 @@ margin_right = 1010.32
 margin_bottom = 600.68
 theme = ExtResource( 1 )
 text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}

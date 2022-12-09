@@ -34,13 +34,13 @@ __meta__ = {
 
 [node name="EscapeButton" parent="InfoRect/VBoxContainer" instance=ExtResource( 4 )]
 anchor_right = 0.0
-margin_right = 524.0
+margin_right = 393.0
 margin_bottom = 20.0
-align = 0
+size_flags_stretch_ratio = 0.0
 
 [node name="InfoTitle" type="RichTextLabel" parent="InfoRect/VBoxContainer"]
 margin_top = 24.0
-margin_right = 524.0
+margin_right = 393.0
 margin_bottom = 94.0
 focus_mode = 2
 size_flags_horizontal = 3
@@ -52,7 +52,7 @@ override_selected_font_color = true
 
 [node name="InfoText" type="RichTextLabel" parent="InfoRect/VBoxContainer"]
 margin_top = 98.0
-margin_right = 524.0
+margin_right = 393.0
 margin_bottom = 648.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
