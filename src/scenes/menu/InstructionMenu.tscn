@@ -92,7 +92,7 @@ anchor_top = 0.664778
 anchor_right = 0.800625
 anchor_bottom = 0.789778
 align = 0
-next_scene_path = "res://src/scenes/Main.tscn"
+next_scene_path = "res://src/scenes/menu/AerobicDissimilationExplained.tscn"
 
 [node name="PlayText" type="RichTextLabel" parent="InstructionsControl"]
 anchor_right = 0.031
@@ -103,6 +103,3 @@ margin_right = 1010.32
 margin_bottom = 600.68
 theme = ExtResource( 1 )
 text = "Play"
-__meta__ = {
-"_edit_use_anchors_": false
-}

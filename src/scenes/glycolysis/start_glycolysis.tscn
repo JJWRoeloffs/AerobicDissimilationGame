@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/images/cell_background.png" type="Texture" id=1]
 [ext_resource path="res://src/buttons/PlayButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/fonts/aerobic_dissimilation_theme.tres" type="Theme" id=3]
+[ext_resource path="res://assets/fonts/info_text_theme.tres" type="Theme" id=4]
 
 [node name="Glycolysis" type="Node2D"]
 
@@ -9,15 +11,33 @@
 margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect"]
+margin_left = 146.0
+margin_top = 146.0
+margin_right = 1225.0
+margin_bottom = 601.0
+theme = ExtResource( 4 )
+text = "A series of reactions that ultimately splits glucose into two molecules of pyruvate. The word glycolysis means 'sugar splitting', and that is exactly what happens during this pathway. Glucose, a six-carbon sugar, is split into two two three-carbon sugars. These smaller sugars are then oxidized and their remaining atoms rearranged to form two molecules of pyruvate. Glycolysis can be divided into two phases: the energy investment phase and the energy payoff phase. During the energy investment phase, the cell actually spends 2 ATP. During the energy payoff phase, the cell gains 4 ATP. 
+Glycolysis occurs in almost all living cells, serving as the starting point for fermentation or cellular respiration. "
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="TextureRect"]
+anchor_left = 0.101
+anchor_top = 0.018
+anchor_right = 0.177
+anchor_bottom = 0.054
+margin_left = 52.398
+margin_top = 2.414
+margin_right = -27.154
+margin_bottom = 2.24199
+theme = ExtResource( 3 )
+text = "Glycolysis"
 
 [node name="PlayButton" parent="TextureRect" instance=ExtResource( 2 )]
-anchor_left = 0.564388
-anchor_top = 0.512006
-anchor_right = 0.634388
-anchor_bottom = 0.637006
+anchor_left = 0.585218
+anchor_top = 0.629023
+anchor_right = 0.619657
+anchor_bottom = 0.690791
 margin_left = -2047.13
 margin_top = -1082.09
 margin_right = -2046.73

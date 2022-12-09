@@ -1,15 +1,13 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://src/buttons/PlayButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/fonts/aerobic_dissimilation_theme.tres" type="Theme" id=2]
 
 [node name="IntermediateStage" type="CanvasLayer"]
 
 [node name="Control" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="ColorRect" type="ColorRect" parent="Control"]
 anchor_right = 1.0
@@ -19,5 +17,17 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+margin_left = 227.0
+margin_top = 96.0
+margin_right = 1145.0
+margin_bottom = 320.0
+theme = ExtResource( 2 )
+text = "Now it's time for the payoff phase. Collect for ADP that can be turned into ATP!"
+
 [node name="PlayButton" parent="Control" instance=ExtResource( 1 )]
+anchor_left = 0.386094
+anchor_top = 0.462
+anchor_right = 0.580313
+anchor_bottom = 0.787
 next_scene_path = "res://src/scenes/glycolysis/second_part.tscn"
