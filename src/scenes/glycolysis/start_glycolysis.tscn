@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://assets/images/cell_background.png" type="Texture" id=1]
+[ext_resource path="res://src/buttons/PlayButton.tscn" type="PackedScene" id=2]
 
 [node name="Glycolysis" type="Node2D"]
 
@@ -11,3 +12,14 @@ texture = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="PlayButton" parent="TextureRect" instance=ExtResource( 2 )]
+anchor_left = 0.564388
+anchor_top = 0.512006
+anchor_right = 0.634388
+anchor_bottom = 0.637006
+margin_left = -2047.13
+margin_top = -1082.09
+margin_right = -2046.73
+margin_bottom = -1082.09
+next_scene_path = "res://src/scenes/glycolysis/first_part.tscn"

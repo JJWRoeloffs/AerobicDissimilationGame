@@ -9,6 +9,8 @@ height = 31.8717
 
 [node name="ATP" type="RigidBody2D"]
 rotation = 0.000991287
+collision_layer = 2147483650
+collision_mask = 3
 gravity_scale = 0.0
 script = ExtResource( 2 )
 
@@ -26,4 +28,5 @@ shape = SubResource( 1 )
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
 rotation = 0.00932304
 rect = Rect2( -40, -25, 80, 50 )
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_screen_exited"]
