@@ -16,18 +16,20 @@ __meta__ = {
 }
 
 [node name="YellowColour" type="ColorRect" parent="InstructionsControl"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.003125
+anchor_top = 0.00972222
+anchor_right = 1.00312
+anchor_bottom = 1.00972
 color = Color( 1, 0.917647, 0.627451, 1 )
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
 [node name="FairPoster" type="TextureRect" parent="InstructionsControl"]
-anchor_left = 0.040625
+anchor_left = 0.078125
 anchor_top = 0.147222
-anchor_right = 0.226563
-anchor_bottom = 0.466667
+anchor_right = 0.28125
+anchor_bottom = 0.497222
 texture = ExtResource( 4 )
 expand = true
 __meta__ = {
@@ -74,10 +76,10 @@ text = "
 Aerobic Dissimilation consists of three main processes: glycolysis, the citric acid cycle and oxidative phosphorylation. These are also the three levels of this game. By clicking on the play buttons you will start the games. Clicking on info buttons will give you even more information on the process. Now, the goal is to earn as many ATP as possible. Good luck! "
 
 [node name="RichTextLabel" type="RichTextLabel" parent="InstructionsControl"]
-margin_left = 340.0
-margin_top = 135.0
-margin_right = 1169.0
-margin_bottom = 328.0
+margin_left = 396.0
+margin_top = 123.0
+margin_right = 1225.0
+margin_bottom = 316.0
 theme = ExtResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "Welcome to our fair of Aerobic Dissimilation. You will get all the information on how a glucose molecule is turned into energy that humans can use to fuel all kinds of processes in our bodies while riding in bumper cars and roller coasters. 
@@ -100,6 +102,3 @@ margin_right = 1010.32
 margin_bottom = 600.68
 theme = ExtResource( 1 )
 text = "Play"
-__meta__ = {
-"_edit_use_anchors_": false
-}
