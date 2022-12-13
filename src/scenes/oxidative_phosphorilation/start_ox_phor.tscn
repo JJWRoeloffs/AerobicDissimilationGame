@@ -1,17 +1,15 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/scenes/oxidative_phosphorilation/OxPhorControl.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/scenes/menu/GlobalUI.tscn" type="PackedScene" id=2]
 
 [node name="OxidativePhosphorilation" type="Node2D"]
 
-[node name="OxPhorControl" type="Control" parent="."]
-margin_left = 4.0
-margin_top = 4.0
-margin_right = 1277.0
-margin_bottom = 729.0
-__meta__ = {
-"_edit_use_anchors_": true
-}
+[node name="UI" type="CanvasLayer" parent="."]
 
-[node name="ColorRect" type="ColorRect" parent="OxPhorControl"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-color = Color( 0.505882, 0.72549, 0.403922, 1 )
+[node name="GlobalUI" parent="UI" instance=ExtResource( 2 )]
+show_behind_parent = true
+
+[node name="OxPhorMenu" type="CanvasLayer" parent="."]
+
+[node name="OxPhorControl" parent="OxPhorMenu" instance=ExtResource( 1 )]
