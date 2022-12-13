@@ -30,12 +30,12 @@ __meta__ = {
 [node name="TextureRect" type="TextureRect" parent="."]
 show_behind_parent = true
 anchor_left = -0.0660001
-anchor_right = 1.21
-anchor_bottom = 1.0
-margin_left = -13.328
+anchor_right = 1.089
+anchor_bottom = 1.25
+margin_left = 0.672014
 margin_top = -6.0
-margin_right = 0.679993
-margin_bottom = 10.0
+margin_right = -0.0880127
+margin_bottom = -8.75
 texture = ExtResource( 5 )
 expand = true
 

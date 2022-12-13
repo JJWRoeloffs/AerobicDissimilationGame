@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/images/cell_map_background.png" type="Texture" id=1]
 [ext_resource path="res://assets/images/menu.png" type="Texture" id=2]
@@ -6,8 +6,6 @@
 [ext_resource path="res://assets/fonts/aerobic_dissimilation_theme.tres" type="Theme" id=4]
 [ext_resource path="res://src/buttons/PlayButton.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/buttons/InfoButton.tscn" type="PackedScene" id=6]
-[ext_resource path="res://assets/images/info2.png" type="Texture" id=7]
-[ext_resource path="res://assets/fonts/info_text_theme.tres" type="Theme" id=8]
 
 [node name="CellMap" type="Control"]
 margin_right = 1280.0
@@ -20,6 +18,10 @@ __meta__ = {
 [node name="CellBackground" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 11.0
+margin_right = 8.0
+margin_bottom = 11.0
 texture = ExtResource( 1 )
 expand = true
 
@@ -78,61 +80,42 @@ anchor_bottom = 0.589778
 next_scene_path = "res://src/scenes/glycolysis/start_glycolysis.tscn"
 
 [node name="PlayButton2" parent="." instance=ExtResource( 5 )]
-anchor_left = 0.512656
-anchor_top = 0.546722
-anchor_right = 0.590907
-anchor_bottom = 0.685722
+anchor_left = 0.529063
+anchor_top = 0.243944
+anchor_right = 0.607314
+anchor_bottom = 0.382944
 next_scene_path = "res://src/scenes/citric_acid_cycle/start_citric_acid_cycle.tscn"
 
 [node name="PlayButton3" parent="." instance=ExtResource( 5 )]
-anchor_left = 0.679844
-anchor_top = 0.703667
-anchor_right = 0.758095
-anchor_bottom = 0.842667
+anchor_left = 0.682188
+anchor_top = 0.706445
+anchor_right = 0.760439
+anchor_bottom = 0.845445
 next_scene_path = "res://src/scenes/oxidative_phosphorilation/start_ox_phor.tscn"
 
-[node name="InfoButton" parent="." instance=ExtResource( 6 )]
-anchor_left = 0.166406
-anchor_top = 0.168056
-anchor_right = 0.316406
-anchor_bottom = 0.245833
-theme = ExtResource( 8 )
+[node name="InfoGlyc" parent="." instance=ExtResource( 6 )]
+anchor_left = 0.1625
+anchor_top = 0.476167
+anchor_right = 0.342469
+anchor_bottom = 0.580556
 text = "Glycolysis"
-icon = ExtResource( 7 )
-align = 0
 linked_text = "res://assets/texts/glycolysis.txt"
 
-[node name="InfoCAC" parent="." instance=ExtResource( 6 )]
-anchor_left = 0.445313
-anchor_top = 0.291667
-anchor_right = 0.646875
-anchor_bottom = 0.369444
-theme = ExtResource( 8 )
+[node name="InfoCaC" parent="." instance=ExtResource( 6 )]
+anchor_left = 0.451562
+anchor_top = 0.256722
+anchor_right = 0.6685
+anchor_bottom = 0.361222
+margin_right = 0.319946
+margin_bottom = -0.0800171
 text = "Citric Acid Cycle"
-icon = ExtResource( 7 )
-align = 0
 linked_text = "res://assets/texts/citric_acid_cycle.txt"
 
-[node name="InfoOxPho" parent="." instance=ExtResource( 6 )]
-anchor_left = 0.578125
-anchor_top = 0.848611
-anchor_right = 0.88125
-anchor_bottom = 0.926389
-theme = ExtResource( 8 )
+[node name="InfoOxFos" parent="." instance=ExtResource( 6 )]
+anchor_left = 0.566406
+anchor_top = 0.723389
+anchor_right = 0.919813
+anchor_bottom = 0.827778
+margin_top = 0.159973
 text = "Oxidative Phosphorylation"
-icon = ExtResource( 7 )
-align = 0
 linked_text = "res://assets/texts/oxidative_phosphorylation.txt"
-
-[node name="InfoMicho" parent="." instance=ExtResource( 6 )]
-anchor_left = 0.195
-anchor_top = 0.831
-anchor_right = 0.378906
-anchor_bottom = 0.923611
-margin_left = -17.6
-margin_top = -0.320007
-theme = ExtResource( 8 )
-text = "Mitochondrium"
-icon = ExtResource( 7 )
-align = 0
-linked_text = "res://assets/texts/mitochondrium.txt"
