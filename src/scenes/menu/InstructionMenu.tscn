@@ -71,7 +71,7 @@ margin_bottom = -27.0
 theme = ExtResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "
-Aerobic Dissimilation consists of three main processes: glycolysis, the citric acid cycle and oxidative phosphorilation. These are also the three levels of this game. By clicking on the play buttons you will start the games. Clicking on info buttons will give you even more information on the process. Now, the goal is to earn as many ATP as possible. Good luck! "
+Aerobic Dissimilation consists of three main processes: glycolysis, the citric acid cycle and oxidative phosphorylation. These are also the three levels of this game. By clicking on the play buttons you will start the games. Clicking on info buttons will give you even more information on the process. Now, the goal is to earn as many ATP as possible. Good luck! "
 
 [node name="RichTextLabel" type="RichTextLabel" parent="InstructionsControl"]
 margin_left = 340.0
@@ -82,9 +82,6 @@ theme = ExtResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "Welcome to our fair of Aerobic Dissimilation. You will get all the information on how a glucose molecule is turned into energy that humans can use to fuel all kinds of processes in our bodies while riding in bumper cars and roller coasters. 
 "
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="PlayButton" parent="InstructionsControl" instance=ExtResource( 5 )]
 anchor_left = 0.730625
