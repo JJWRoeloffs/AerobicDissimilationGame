@@ -6,6 +6,7 @@ export var pickup_scene: PackedScene
 export var pickup_ratio: int
 
 onready var spawn_path: = get_node("GeneratingPath/SpawnLocation")
+onready var player: = get_node("Player")
 onready var scene_tree: = get_tree()
 
 func _ready() -> void:
@@ -13,13 +14,15 @@ func _ready() -> void:
     GlycolysisGlobal.first_part = false
     GlycolysisGlobal.score = 0
 
+    player.connect("spawn_entity", self, "add_child")
+
 # This function cannot be inherited because it isn't static
 func spawn_entity(spawned_scene: PackedScene, to_pick_up: bool = true) -> void:
     spawn_path.unit_offset = randf()
 
     var entity = spawned_scene.instance()
     add_child(entity)
-    
+
     entity.to_pick_up = to_pick_up
     entity.position = spawn_path.position
 

@@ -44,4 +44,5 @@ autostart = true
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( 640, 440 )
+spawn_collected = ExtResource( 5 )
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_SpawnTimer_timeout"]

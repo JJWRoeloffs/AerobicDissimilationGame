@@ -3,13 +3,17 @@ extends Node
 export var next_scene: PackedScene
 export var spawned_scene: PackedScene
 
-onready var spawn_path = get_node("GeneratingPath/SpawnLocation")
+onready var spawn_path: = get_node("GeneratingPath/SpawnLocation")
+onready var player: = get_node("Player")
 onready var scene_tree: = get_tree()
 
 func _ready() -> void:
     GlycolysisGlobal.connect("change_scene", self, "go_to_next_scene")
     GlycolysisGlobal.first_part = true
     GlycolysisGlobal.score = 0
+
+    player.connect("spawn_entity", self, "add_child")
+
 
 func _on_SpawnTimer_timeout() -> void:
     spawn_entity(spawned_scene)
