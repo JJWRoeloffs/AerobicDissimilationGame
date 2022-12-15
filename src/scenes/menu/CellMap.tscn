@@ -113,5 +113,7 @@ anchor_bottom = 2.36853
 next_scene_path = "res://src/scenes/citric_acid_cycle/start_citric_acid_cycle.tscn"
 
 [editable path="InfoGlyc"]
+
 [editable path="InfoOxPhor"]
+
 [editable path="InfoCaC"]

@@ -6,16 +6,14 @@
 [ext_resource path="res://assets/images/flyer.png" type="Texture" id=4]
 [ext_resource path="res://src/buttons/InfoButton.tscn" type="PackedScene" id=5]
 
-[node name="GameInstructions" type="Node2D"]
-
-[node name="InstructionsControl" type="Control" parent="."]
+[node name="InstructionsControl" type="Control"]
 margin_right = 1280.0
 margin_bottom = 720.0
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="YellowColour" type="ColorRect" parent="InstructionsControl"]
+[node name="YellowColour" type="ColorRect" parent="."]
 anchor_left = -0.0046875
 anchor_top = -0.00416667
 anchor_right = 1.00312
@@ -25,7 +23,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="FairPoster" type="TextureRect" parent="InstructionsControl"]
+[node name="FairPoster" type="TextureRect" parent="."]
 anchor_left = 0.078125
 anchor_top = 0.147222
 anchor_right = 0.28125
@@ -36,7 +34,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="Tickets" type="TextureRect" parent="InstructionsControl"]
+[node name="Tickets" type="TextureRect" parent="."]
 anchor_left = 0.670969
 anchor_top = 0.451556
 anchor_right = 0.854688
@@ -49,7 +47,7 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="TitleText" type="RichTextLabel" parent="InstructionsControl"]
+[node name="TitleText" type="RichTextLabel" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -608.0
@@ -60,7 +58,7 @@ theme = ExtResource( 1 )
 text = "Instructions to Aerobic Dissimilation: The Video Game
 "
 
-[node name="InstructionText" type="RichTextLabel" parent="InstructionsControl"]
+[node name="InstructionText" type="RichTextLabel" parent="."]
 anchor_right = 0.5
 anchor_bottom = 1.0
 margin_left = 69.0
@@ -72,7 +70,7 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "
 Aerobic Dissimilation consists of three main processes: glycolysis, the citric acid cycle and oxidative phosphorylation. These are also the three levels of this game. By clicking on the play buttons you will start the games. But, you need to buy your tickets to be able to start the games. Now, the goals is to collect as many ATP as possible. Go buy your entry ticket at the ticket stand! "
 
-[node name="RichTextLabel" type="RichTextLabel" parent="InstructionsControl"]
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 396.0
 margin_top = 123.0
 margin_right = 1225.0
@@ -82,7 +80,7 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "Welcome to our fair of Aerobic Dissimilation. You will get all the information on how a glucose molecule is turned into energy that humans can use to fuel all kinds of processes in our bodies while riding in bumper cars and roller coasters. 
 "
 
-[node name="InfoButton" parent="InstructionsControl" instance=ExtResource( 5 )]
+[node name="InfoButton" parent="." instance=ExtResource( 5 )]
 anchor_left = 0.623438
 anchor_top = 0.816444
 anchor_right = 0.903094
@@ -93,11 +91,12 @@ text = "Aerobic Dissimilation"
 linked_text = "res://assets/texts/aerobic_dissimilation.txt"
 play_button_linked = true
 
-[node name="InfoPlayButton" parent="InstructionsControl/InfoButton" index="1"]
+[node name="InfoPlayButton" parent="InfoButton" index="1"]
+visible = false
 anchor_left = 0.358101
 anchor_top = -2.11147
 anchor_right = 0.6419
 anchor_bottom = -0.871466
 next_scene_path = "res://src/scenes/Main.tscn"
 
-[editable path="InstructionsControl/InfoButton"]
+[editable path="InfoButton"]
