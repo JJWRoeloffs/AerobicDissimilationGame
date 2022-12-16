@@ -11,4 +11,4 @@ func update_interface() -> void:
     if GlycolysisGlobal.first_part == true:
         text.text = "Collect Two ATP!\nScore: %s" % GlycolysisGlobal.score
     else:
-        text.text = "Collect two ADP!\nAvoid the ATP!\nScore: %s" % GlycolysisGlobal.score
+        text.text = "Collect Four ADP!\nAvoid the ATP!\nScore: %s" % GlycolysisGlobal.score

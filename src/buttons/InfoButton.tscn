@@ -38,9 +38,9 @@ texture = ExtResource( 5 )
 expand = true
 
 [node name="InfoPlayButton" parent="." instance=ExtResource( 6 )]
+visible = false
 anchor_left = 0.329167
 anchor_top = -1.29813
 anchor_right = 0.7125
 anchor_bottom = -0.351466
-
 [connection signal="button_up" from="." to="." method="_on_button_up"]

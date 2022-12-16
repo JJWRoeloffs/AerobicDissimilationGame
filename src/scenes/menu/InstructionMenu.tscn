@@ -69,6 +69,9 @@ theme = ExtResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "
 Aerobic Dissimilation consists of three main processes: glycolysis, the citric acid cycle and oxidative phosphorylation. These are also the three levels of this game. By clicking on the play buttons you will start the games. But, you need to buy your tickets to be able to start the games. Now, the goals is to collect as many ATP as possible. Go buy your entry ticket at the ticket stand! "
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 396.0
@@ -92,7 +95,6 @@ linked_text = "res://assets/texts/aerobic_dissimilation.txt"
 play_button_linked = true
 
 [node name="InfoPlayButton" parent="InfoButton" index="1"]
-visible = false
 anchor_left = 0.358101
 anchor_top = -2.11147
 anchor_right = 0.6419

@@ -62,7 +62,6 @@ linked_text = "res://assets/texts/glycolysis.txt"
 play_button_linked = true
 
 [node name="InfoPlayButton" parent="InfoGlyc" index="1"]
-visible = false
 anchor_left = 0.386459
 anchor_bottom = -0.498133
 next_scene_path = "res://src/scenes/glycolysis/start_glycolysis.tscn"
@@ -84,7 +83,6 @@ margin_right = 26.916
 margin_bottom = -0.232002
 
 [node name="InfoPlayButton" parent="InfoOxPhor" index="1"]
-visible = false
 anchor_left = 0.341766
 anchor_top = -1.39625
 anchor_right = 0.630829
@@ -105,7 +103,6 @@ margin_left = -4.322
 margin_right = -5.08203
 
 [node name="InfoPlayButton" parent="InfoCaC" index="1"]
-visible = false
 anchor_left = 0.385866
 anchor_top = 1.54187
 anchor_right = 0.614134

@@ -1,0 +1,5 @@
+The First Game
+In this first game, you are the glucose molecule, ready to be converted into ATP.
+In the first stage, you're going to need to pick up some ATP to start the process, in the second stage, you can pick up the ADP and convert them into ATP as a payoff.
+
+Good luck!

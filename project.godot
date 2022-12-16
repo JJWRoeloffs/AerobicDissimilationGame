@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Aerobic Dissimilation - The Game"
-run/main_scene="res://src/scenes/menu/InstructionMenu.tscn"
+run/main_scene="res://src/scenes/Intro.tscn"
 config/icon="res://icon.png"
 
 [autoload]

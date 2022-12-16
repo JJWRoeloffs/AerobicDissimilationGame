@@ -5,7 +5,7 @@
 [ext_resource path="res://src/scenes/glycolysis/HUD.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/scenes/glycolysis/player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://src/scenes/glycolysis/ATP.tscn" type="PackedScene" id=5]
-[ext_resource path="res://src/scenes/Main.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/scenes/glycolysis/FInishStage.tscn" type="PackedScene" id=6]
 [ext_resource path="res://src/scenes/glycolysis/ADP.tscn" type="PackedScene" id=7]
 
 [sub_resource type="Curve2D" id=1]
