@@ -21,8 +21,12 @@ margin_top = 146.0
 margin_right = 1225.0
 margin_bottom = 601.0
 theme = ExtResource( 4 )
-text = "A series of reactions that ultimately splits glucose into two molecules of pyruvate. The word glycolysis means 'sugar splitting', and that is exactly what happens during this pathway. Glucose, a six-carbon sugar, is split into two two three-carbon sugars. These smaller sugars are then oxidized and their remaining atoms rearranged to form two molecules of pyruvate. Glycolysis can be divided into two phases: the energy investment phase and the energy payoff phase. During the energy investment phase, the cell actually spends 2 ATP. During the energy payoff phase, the cell gains 4 ATP. 
-Glycolysis occurs in almost all living cells, serving as the starting point for fermentation or cellular respiration. "
+text = "In this first game, you are the glucose molecule, ready to be converted into ATP.
+In the first stage, you're going to need to pick up some ATP to start the process, in the second stage, you can pick up the ADP and convert them into ATP as a payoff.
+
+You can move the player around with the arrow keys!
+
+Good luck!"
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="TextureRect"]
 anchor_left = 0.101
@@ -35,6 +39,9 @@ margin_right = -27.154
 margin_bottom = 2.24199
 theme = ExtResource( 3 )
 text = "Glycolysis"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="PlayButton" parent="TextureRect" instance=ExtResource( 2 )]
 anchor_left = 0.585218
