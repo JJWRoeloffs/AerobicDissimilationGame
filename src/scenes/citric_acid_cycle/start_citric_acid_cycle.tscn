@@ -1,3 +1,31 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/buttons/PlayButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/fonts/aerobic_dissimilation_theme.tres" type="Theme" id=2]
 
 [node name="citric_acid_cycle" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_left = -9.0
+margin_top = -13.0
+margin_right = 1390.0
+margin_bottom = 878.0
+
+[node name="PlayButton" parent="Control" instance=ExtResource( 1 )]
+anchor_left = 0.490161
+anchor_top = 0.389458
+anchor_right = 0.782513
+anchor_bottom = 0.823801
+margin_left = -277.735
+margin_top = -166.007
+margin_right = -265.735
+margin_bottom = -146.007
+next_scene_path = "res://src/scenes/Main.tscn"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+margin_left = 262.0
+margin_top = 70.0
+margin_right = 959.0
+margin_bottom = 149.0
+theme = ExtResource( 2 )
+text = "Under construction, go back.  "
