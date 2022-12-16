@@ -6,6 +6,7 @@ export var pickup_scene: PackedScene
 export var pickup_ratio: int
 
 onready var spawn_path: = get_node("GeneratingPath/SpawnLocation")
+onready var spawn_timer: = get_node("SpawnTimer")
 onready var player: = get_node("Player")
 onready var scene_tree: = get_tree()
 
@@ -34,6 +35,8 @@ func spawn_entity(spawned_scene: PackedScene, to_pick_up: bool = true) -> void:
     entity.linear_velocity = velocity.rotated(direction)
 
 func _on_SpawnTimer_timeout() -> void:
+    if spawn_timer.wait_time > 0.5:
+        spawn_timer.wait_time *= 0.75
     if randi() % pickup_ratio == 0:
         spawn_entity(pickup_scene, true)
     else:

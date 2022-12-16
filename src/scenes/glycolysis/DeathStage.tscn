@@ -46,4 +46,4 @@ __meta__ = {
 }
 
 [node name="PlayButton" parent="Control" instance=ExtResource( 1 )]
-next_scene_path = "res://src/scenes/glycolysis/start_glycolysis.tscn"
+next_scene_path = "res://src/scenes/glycolysis/first_part.tscn"
