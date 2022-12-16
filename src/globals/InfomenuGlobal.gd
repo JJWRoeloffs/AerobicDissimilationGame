@@ -15,7 +15,6 @@ func _ready() -> void:
 func reset() -> void:
     menu = "res://assets/texts/Test.txt"
     playbutton_dict = create_playbutton_dict("res://assets/texts/")
-    print(playbutton_dict)
 
 
 func set_infomenu(value: String) -> void:
