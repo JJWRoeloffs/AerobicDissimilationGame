@@ -25,10 +25,14 @@ __meta__ = {
 margin_left = 325.0
 margin_top = 262.0
 margin_right = 1138.0
-margin_bottom = 474.0
+margin_bottom = 452.0
 theme = ExtResource( 3 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "You had to avoid the ATP and collect the ADB!
 Let's try again!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="Control"]
 margin_left = 533.397
@@ -37,6 +41,9 @@ margin_right = 904.397
 margin_bottom = 287.295
 theme = ExtResource( 2 )
 text = "You Died!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="PlayButton" parent="Control" instance=ExtResource( 1 )]
 next_scene_path = "res://src/scenes/glycolysis/start_glycolysis.tscn"
