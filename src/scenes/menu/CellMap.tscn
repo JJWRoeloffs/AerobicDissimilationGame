@@ -1,41 +1,28 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/images/cell_map_background.png" type="Texture" id=1]
-[ext_resource path="res://assets/images/menu.png" type="Texture" id=2]
+[ext_resource path="res://src/buttons/HamburgerButton.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/fonts/aerobic_dissimilation_theme.tres" type="Theme" id=4]
+[ext_resource path="res://assets/fonts/info_button_theme.tres" type="Theme" id=5]
 [ext_resource path="res://src/buttons/InfoButton.tscn" type="PackedScene" id=6]
 
 [node name="CellMap" type="Control"]
 margin_right = 1280.0
 margin_bottom = 720.0
 theme = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="CellBackground" type="TextureRect" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 2.0
 margin_right = 2.0
+theme = ExtResource( 5 )
 texture = ExtResource( 1 )
 expand = true
 
-[node name="HamburgerButton" type="MenuButton" parent="."]
-anchor_left = -0.00703144
-anchor_top = 0.0111111
-anchor_right = -0.00703144
-anchor_bottom = 0.0111111
-margin_left = 1189.0
-margin_top = 14.0
-margin_right = 1274.0
-margin_bottom = 89.0
-focus_mode = 2
-icon = ExtResource( 2 )
-expand_icon = true
-__meta__ = {
-"_edit_use_anchors_": true
-}
+[node name="HamburgerButton" parent="." instance=ExtResource( 3 )]
+theme = ExtResource( 5 )
+disabled = true
 
 [node name="Label" type="Label" parent="."]
 visible = false
@@ -87,7 +74,7 @@ anchor_left = 0.341766
 anchor_top = -1.39625
 anchor_right = 0.630829
 anchor_bottom = -0.455221
-next_scene_path = "res://src/scenes/oxidative_phosphorilation/start_ox_phor.tscn"
+next_scene_path = "res://src/scenes/oxidative_phosphorilation/ox_phor_instruction.tscn"
 
 [node name="InfoCaC" parent="." instance=ExtResource( 6 )]
 anchor_left = 0.445313
@@ -110,7 +97,5 @@ anchor_bottom = 2.36853
 next_scene_path = "res://src/scenes/citric_acid_cycle/start_citric_acid_cycle.tscn"
 
 [editable path="InfoGlyc"]
-
 [editable path="InfoOxPhor"]
-
 [editable path="InfoCaC"]

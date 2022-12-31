@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/buttons/PlayButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/fonts/aerobic_dissimilation_theme.tres" type="Theme" id=2]
+[ext_resource path="res://assets/images/green_background.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/ferris-wheel.png" type="Texture" id=4]
+[ext_resource path="res://assets/fonts/info_text_theme.tres" type="Theme" id=5]
 
 [node name="citric_acid_cycle" type="Node2D"]
 
@@ -11,11 +14,27 @@ margin_top = -13.0
 margin_right = 1390.0
 margin_bottom = 878.0
 
+[node name="TextureRect" type="TextureRect" parent="Control"]
+anchor_right = 0.928
+anchor_bottom = 0.841
+margin_right = 11.7279
+margin_bottom = 25.669
+rect_pivot_offset = Vector2( 803, 402 )
+texture = ExtResource( 3 )
+expand = true
+
+[node name="TextureRect2" type="TextureRect" parent="Control"]
+margin_left = 365.0
+margin_top = 224.0
+margin_right = 877.0
+margin_bottom = 736.0
+texture = ExtResource( 4 )
+
 [node name="PlayButton" parent="Control" instance=ExtResource( 1 )]
-anchor_left = 0.490161
-anchor_top = 0.389458
-anchor_right = 0.782513
-anchor_bottom = 0.823801
+anchor_left = 0.568074
+anchor_top = 0.560053
+anchor_right = 0.708174
+anchor_bottom = 0.787887
 margin_left = -277.735
 margin_top = -166.007
 margin_right = -265.735
@@ -23,9 +42,18 @@ margin_bottom = -146.007
 next_scene_path = "res://src/scenes/Main.tscn"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control"]
-margin_left = 262.0
-margin_top = 70.0
-margin_right = 959.0
-margin_bottom = 149.0
+margin_left = 438.0
+margin_top = 56.0
+margin_right = 832.0
+margin_bottom = 135.0
 theme = ExtResource( 2 )
-text = "Under construction, go back.  "
+text = "Citric Acid Cycle"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Control"]
+margin_left = 369.0
+margin_top = 148.0
+margin_right = 892.0
+margin_bottom = 226.0
+theme = ExtResource( 5 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "UNDER CONSTRUCTION, PLEASE GO BACK."
