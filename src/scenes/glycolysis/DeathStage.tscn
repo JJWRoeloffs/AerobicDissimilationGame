@@ -16,29 +16,40 @@ __meta__ = {
 [node name="ColorRect" type="ColorRect" parent="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -2.99658
+margin_top = 2.99664
+margin_right = -2.99658
+margin_bottom = 2.99664
 color = Color( 1, 0.917647, 0.627451, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control"]
-margin_left = 325.0
-margin_top = 262.0
-margin_right = 1138.0
-margin_bottom = 452.0
+anchor_left = -0.00117054
+anchor_right = -0.00117054
+margin_left = 348.973
+margin_top = 257.505
+margin_right = 1161.97
+margin_bottom = 447.505
 theme = ExtResource( 3 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "You had to avoid the ATP and collect the ADB!
-Let's try again!"
+
+Let's try again!          Try again from beginning"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="Control"]
-margin_left = 533.397
-margin_top = 181.295
-margin_right = 904.397
-margin_bottom = 287.295
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -122.983
+margin_top = -195.824
+margin_right = 112.017
+margin_bottom = -114.824
 theme = ExtResource( 2 )
 text = "You Died!"
 __meta__ = {
@@ -46,4 +57,15 @@ __meta__ = {
 }
 
 [node name="PlayButton" parent="Control" instance=ExtResource( 1 )]
+anchor_left = 0.582055
+anchor_top = 0.536887
+anchor_right = 0.652055
+anchor_bottom = 0.661887
 next_scene_path = "res://src/scenes/glycolysis/first_part.tscn"
+
+[node name="PlayButton2" parent="Control" instance=ExtResource( 1 )]
+anchor_left = 0.328045
+anchor_top = 0.541049
+anchor_right = 0.398045
+anchor_bottom = 0.666049
+next_scene_path = "res://src/scenes/glycolysis/second_part.tscn"

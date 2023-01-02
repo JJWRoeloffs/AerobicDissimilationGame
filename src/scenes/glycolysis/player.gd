@@ -3,7 +3,7 @@ extends Area2D
 signal spawn_entity(entity)
 
 export var speed: = 400.0
-export var size: = Vector2(75, 75)
+export var size: = Vector2(150, 150)
 export var death_scene: PackedScene
 
 export var spawn_collected: PackedScene
