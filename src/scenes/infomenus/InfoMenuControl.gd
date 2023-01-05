@@ -18,11 +18,7 @@ func reset_text() -> void:
     body_node.text = ""
 
 func update_text() -> void:
-    var f: = File.new()
-    if not f.file_exists(InfomenuGlobal.menu):
-        return
-    f.open(InfomenuGlobal.menu, File.READ)
-    title_node.text = f.get_line()
-    while not f.eof_reached():
-        body_node.text += (f.get_line() + "\n")
-    f.close()
+    var text = InfomenuGlobal.hackfix_dict[InfomenuGlobal.menu]
+    var text_array = text.split("\n", false, 1)
+    title_node.text = text_array[0]
+    body_node.text = text_array[1]

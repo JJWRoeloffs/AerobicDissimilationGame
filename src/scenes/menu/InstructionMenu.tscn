@@ -88,7 +88,7 @@ anchor_bottom = 0.936444
 margin_top = 0.159973
 margin_right = 0.0400391
 text = "Aerobic Dissimilation"
-linked_text = "res://assets/texts/aerobic_dissimilation.txt"
+linked_text = "aerobic_dissimilation.txt"
 play_button_linked = true
 
 [node name="InfoPlayButton" parent="InfoButton" index="1"]

@@ -1,7 +1,7 @@
 tool
 extends Button
 
-export(String, FILE) var linked_text: = ""
+export(String) var linked_text: = ""
 export(bool) var play_button_linked = false
 onready var play_button: = get_node("InfoPlayButton")
 
