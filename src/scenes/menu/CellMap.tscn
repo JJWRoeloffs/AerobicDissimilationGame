@@ -1,0 +1,101 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/images/cell_map_background.png" type="Texture" id=1]
+[ext_resource path="res://src/buttons/HamburgerButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/fonts/aerobic_dissimilation_theme.tres" type="Theme" id=4]
+[ext_resource path="res://assets/fonts/info_button_theme.tres" type="Theme" id=5]
+[ext_resource path="res://src/buttons/InfoButton.tscn" type="PackedScene" id=6]
+
+[node name="CellMap" type="Control"]
+margin_right = 1280.0
+margin_bottom = 720.0
+theme = ExtResource( 4 )
+
+[node name="CellBackground" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_right = 2.0
+theme = ExtResource( 5 )
+texture = ExtResource( 1 )
+expand = true
+
+[node name="HamburgerButton" parent="." instance=ExtResource( 3 )]
+theme = ExtResource( 5 )
+disabled = true
+
+[node name="Label" type="Label" parent="."]
+visible = false
+anchor_left = 0.164391
+anchor_top = 0.0152778
+anchor_right = 0.836391
+anchor_bottom = 0.111278
+margin_left = 0.579987
+margin_right = -0.580078
+margin_bottom = -0.120003
+text = "Aerobic Dissimilation: The Video Game"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="InfoGlyc" parent="." instance=ExtResource( 6 )]
+anchor_left = 0.15625
+anchor_top = 0.473389
+anchor_right = 0.306219
+anchor_bottom = 0.593389
+margin_top = 0.159973
+text = "Glycolysis"
+linked_text = "res://assets/texts/glycolysis.txt"
+play_button_linked = true
+
+[node name="InfoPlayButton" parent="InfoGlyc" index="1"]
+anchor_left = 0.386459
+anchor_bottom = -0.498133
+next_scene_path = "res://src/scenes/glycolysis/start_glycolysis.tscn"
+
+[node name="InfoOxPhor" parent="." instance=ExtResource( 6 )]
+anchor_left = 0.586719
+anchor_top = 0.730333
+anchor_right = 0.914031
+anchor_bottom = 0.835056
+text = "Oxidative Phosphorylation"
+linked_text = "res://assets/texts/oxidative_phosphorylation.txt"
+play_button_linked = true
+
+[node name="TextureRect" parent="InfoOxPhor" index="0"]
+anchor_right = 1.036
+anchor_bottom = 1.113
+margin_left = -21.346
+margin_right = 26.916
+margin_bottom = -0.232002
+
+[node name="InfoPlayButton" parent="InfoOxPhor" index="1"]
+anchor_left = 0.341766
+anchor_top = -1.39625
+anchor_right = 0.630829
+anchor_bottom = -0.455221
+next_scene_path = "res://src/scenes/oxidative_phosphorilation/ox_phor_instruction.tscn"
+
+[node name="InfoCaC" parent="." instance=ExtResource( 6 )]
+anchor_left = 0.445313
+anchor_top = 0.238667
+anchor_right = 0.666375
+anchor_bottom = 0.358667
+text = "Citric Acid Cycle"
+linked_text = "res://assets/texts/citric_acid_cycle.txt"
+play_button_linked = true
+
+[node name="TextureRect" parent="InfoCaC" index="0"]
+margin_left = -4.322
+margin_right = -5.08203
+
+[node name="InfoPlayButton" parent="InfoCaC" index="1"]
+anchor_left = 0.385866
+anchor_top = 1.54187
+anchor_right = 0.614134
+anchor_bottom = 2.36853
+next_scene_path = "res://src/scenes/citric_acid_cycle/start_citric_acid_cycle.tscn"
+
+[editable path="InfoGlyc"]
+[editable path="InfoOxPhor"]
+[editable path="InfoCaC"]

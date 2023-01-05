@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/images/green_background.png" type="Texture" id=1]
+[ext_resource path="res://src/buttons/PlayButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/fonts/aerobic_dissimilation_theme.tres" type="Theme" id=3]
+[ext_resource path="res://assets/fonts/info_text_theme.tres" type="Theme" id=4]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 2, 2 )
+
+[node name="Control" type="Control" parent="."]
+margin_left = -3.0
+margin_top = 3.0
+margin_right = 37.0
+margin_bottom = 43.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+anchor_left = -2.575
+anchor_top = -1.425
+anchor_right = 52.308
+anchor_bottom = 29.357
+margin_left = -5.0
+margin_top = -6.0
+margin_right = 4.67993
+margin_bottom = 5.71997
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+margin_left = 228.0
+margin_top = 136.0
+margin_right = 1056.0
+margin_bottom = 229.0
+theme = ExtResource( 4 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "The oxidative phosphorylation game is  still under construction. However, you can have a look at the design here. "
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Control"]
+margin_left = 321.0
+margin_top = 41.0
+margin_right = 955.0
+margin_bottom = 118.0
+theme = ExtResource( 3 )
+text = "Oxidative Phosphorylation"
+
+[node name="PlayButton" parent="Control" instance=ExtResource( 2 )]
+anchor_left = 13.105
+anchor_top = 7.191
+anchor_right = 18.57
+anchor_bottom = 12.341
+next_scene_path = "res://src/scenes/oxidative_phosphorilation/start_ox_phor.tscn"

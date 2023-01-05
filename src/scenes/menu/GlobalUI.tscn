@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/scenes/infomenus/InfoMenuControl.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/scenes/menu/GlobalUI.gd" type="Script" id=2]
+
+[node name="GlobalUI" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="InfoMenuOverlay" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 0.392157 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfoMenuControl" parent="InfoMenuOverlay" instance=ExtResource( 1 )]
