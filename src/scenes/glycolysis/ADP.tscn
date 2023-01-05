@@ -4,7 +4,7 @@
 [ext_resource path="res://src/scenes/glycolysis/ATP.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 24.7147, 11.5625 )
+extents = Vector2( 57.6471, 27.4315 )
 
 [node name="ADP" type="RigidBody2D"]
 rotation = 0.000991287
@@ -18,14 +18,14 @@ position = Vector2( -0.236897, -0.943629 )
 shape = SubResource( 1 )
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
-position = Vector2( -0.140588, -0.280472 )
+position = Vector2( -0.586695, -0.948206 )
 rotation = 0.00932304
-scale = Vector2( 0.660095, 0.5117 )
+scale = Vector2( 1.42478, 1.09453 )
 rect = Rect2( -40, -25, 80, 50 )
 
 [node name="cotton-candy" type="Sprite" parent="."]
-position = Vector2( -0.172644, -0.199984 )
-scale = Vector2( 0.126993, 0.106302 )
+position = Vector2( -0.284663, -0.86805 )
+scale = Vector2( 0.273088, 0.221966 )
 texture = ExtResource( 1 )
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_screen_exited"]
